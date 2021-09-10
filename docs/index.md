@@ -5,6 +5,8 @@ Welcome to the BasicService website!  Below, you'll be able to see a list of ins
 # Installation
 In order to install the system, simply insert the model and drag it into ReplicatedStorage, then you're done!
 Additionally, if you'd like the service files names to be randomized simply enable HTTP requests on your game!
+Model: https://www.roblox.com/library/7448578588/BasicService
+
 > **Note:** In the event that you find a bug with the system, please report the bug to **Madonox#8787** on Discord!
 ## Usage
 
