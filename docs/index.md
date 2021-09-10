@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# BasicService
 
-You can use the [editor on GitHub](https://github.com/Madonox/BasicService/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Welcome to the BasicService website!  Below, you'll be able to see a list of instructions on how to install the service, as well as use it!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Installation
+In order to install the system, simply insert the model and drag it into ReplicatedStorage, then you're done!
+Additionally, if you'd like the service files names to be randomized simply enable HTTP requests on your game!
+> **Note:** In the event that you find a bug with the system, please report the bug to **Madonox#8787** on Discord!
+## Usage
 
-### Markdown
+BasicService offers a simple, yet quite effective system for all developers to use to hopefully help speed up their programming as a whole.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Require the API module:
+```lua
+local BasicService = require(game.ReplicatedStorage.BasicService.BasicService)
+```
+Once that is done, you may use the API!
+Example API method:
+```lua
+BasicService:Index("testService",{
+	["testFunction"] = function()
+		print("test!")
+	end
+},false)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Madonox/BasicService/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+|Method|Arguments                          |Function|
+|----------------|-------------------------------|-----------------------------|
+|Index|`serviceName` `functionsArray` `true|false`            |Define a service, setting the third argument to true will disable the abilities for clients to use the service.          |
+|GetService|`serviceName`            |Returns the service requested if it is defined.            |
